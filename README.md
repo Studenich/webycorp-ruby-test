@@ -140,5 +140,5 @@ rubocop configuration.
 1. **Fork the repository**: Create a fork of this repository to your GitHub account.
 2. **Create a new branch**: In your forked repository, create a new branch for your work.
 3. **Make small commits**: As you work on the assignment, make small, incremental commits to your branch.
-4. **Create a Pull Request**: Once you have completed the assignment, create a Pull Request from your branch to the main branch of your forked repository.
-5. **Submit the link**: Submit the link to the created Pull Request as your solution to the assignment.
+4. **Complete your work**: Once you have completed the assignment, ensure all your changes are committed and pushed to your branch.
+5. **Submit the link**: Submit the link to your forked repository as your solution to the assignment.
