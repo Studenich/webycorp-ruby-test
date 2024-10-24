@@ -1,0 +1,50 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakestoreapi.com/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:10:55 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=rSLaNYHcp2S4lxBxQ%2FdW8FoG5ceWVDEHzVkKtAuOjFym4c0k%2FsRpS35cm%2BGTtGKeepEnj4yTRACUdH0ixEYvP2Cs82eoJRb4%2FrQMV3%2BrGLPZguMLQOnANOu6a0vOZ23grbuF"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf4d57f8eb621-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=122637&sent=7&recv=10&lost=0&retrans=2&sent_bytes=5495&recv_bytes=762&delivery_rate=45313&cwnd=251&unsent_bytes=0&cid=9fd6d7d1e4705eb4&ts=253&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"address":{"geolocation":{"lat":"-37.3159","long":"81.1496"},"city":"kilcoole","street":"new
+        road","number":7682,"zipcode":"12926-3874"},"id":1,"email":"john@gmail.com","username":"johnd","password":"m38rmF$","name":{"firstname":"john","lastname":"doe"},"phone":"1-570-236-7033","__v":0}'
+  recorded_at: Thu, 24 Oct 2024 21:10:55 GMT
+recorded_with: VCR 6.2.0

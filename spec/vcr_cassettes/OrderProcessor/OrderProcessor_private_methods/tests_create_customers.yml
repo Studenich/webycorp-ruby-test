@@ -1,0 +1,335 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakestoreapi.com/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:32 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=xf5vP3Yw3%2FE%2BNR5Qivad2NSxOtxf5eJi9aKtGlNwf2yKdKNrmIG8I6xLtPChQ5piLHiwSd9DFKZCG7qyjUWci0SSOPQThePVklvxHyIEGNm%2Bi7xvzXLxiHtb9RXGO0C%2Bumgn"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf5b9fee5bf2b-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=123442&sent=6&recv=9&lost=0&retrans=1&sent_bytes=4151&recv_bytes=762&delivery_rate=32067&cwnd=252&unsent_bytes=0&cid=3c0e980f0e105550&ts=272&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"address":{"geolocation":{"lat":"-37.3159","long":"81.1496"},"city":"kilcoole","street":"new
+        road","number":7682,"zipcode":"12926-3874"},"id":1,"email":"john@gmail.com","username":"johnd","password":"m38rmF$","name":{"firstname":"john","lastname":"doe"},"phone":"1-570-236-7033","__v":0}'
+  recorded_at: Thu, 24 Oct 2024 21:11:32 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/customers
+    body:
+      encoding: UTF-8
+      string: name=john+doe&email=john%40gmail.com
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_Vp6UOLDSe4iEL6","request_duration_ms":423}}'
+      Idempotency-Key:
+      - f5ac5583-3b06-4c3c-bdd5-640149d215d9
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:32 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '602'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fcustomers; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - f5ac5583-3b06-4c3c-bdd5-640149d215d9
+      Original-Request:
+      - req_6bB4P8T59XdXCL
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=accounts-bapi-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=accounts-bapi-srv"
+      Request-Id:
+      - req_6bB4P8T59XdXCL
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "cus_R5jn8qkPcUcNVr",
+          "object": "customer",
+          "address": null,
+          "balance": 0,
+          "created": 1729804292,
+          "currency": null,
+          "default_source": null,
+          "delinquent": false,
+          "description": null,
+          "discount": null,
+          "email": "john@gmail.com",
+          "invoice_prefix": "05C9D6B0",
+          "invoice_settings": {
+            "custom_fields": null,
+            "default_payment_method": null,
+            "footer": null,
+            "rendering_options": null
+          },
+          "livemode": false,
+          "metadata": {},
+          "name": "john doe",
+          "phone": null,
+          "preferred_locales": [],
+          "shipping": null,
+          "tax_exempt": "none",
+          "test_clock": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:32 GMT
+- request:
+    method: get
+    uri: https://fakestoreapi.com/users/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:33 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"12d-rQ3vazNILlcEdp3VtaYW0Rr1+SY"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=VXqw1rgmetujzHEKS%2BMgCWjDhv3XC%2FSKF1ZHA3zidq7eiirScF5RVEGMRNNLojeb4wrG%2B6xfaCeeQDzwQfoCUAZC%2BVipQ8zdotGs6fYHJKqtTCAnga6R3XaUs7qH6Qge%2BOkS"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf5c139e53bca-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=115762&sent=7&recv=10&lost=0&retrans=2&sent_bytes=5493&recv_bytes=762&delivery_rate=45585&cwnd=251&unsent_bytes=0&cid=b2260029fa442c8c&ts=337&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"address":{"geolocation":{"lat":"-37.3159","long":"81.1496"},"city":"kilcoole","street":"Lovers
+        Ln","number":7267,"zipcode":"12926-3874"},"id":2,"email":"morrison@gmail.com","username":"mor_2314","password":"83r5^_","name":{"firstname":"david","lastname":"morrison"},"phone":"1-570-236-7033","__v":0}'
+  recorded_at: Thu, 24 Oct 2024 21:11:33 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/customers
+    body:
+      encoding: UTF-8
+      string: name=david+morrison&email=morrison%40gmail.com
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_6bB4P8T59XdXCL","request_duration_ms":450}}'
+      Idempotency-Key:
+      - 5b2f96b6-5ee4-4ecc-baf9-513ed33b3bf3
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '612'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fcustomers; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 5b2f96b6-5ee4-4ecc-baf9-513ed33b3bf3
+      Original-Request:
+      - req_rRR4Q9BatdJkOT
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=accounts-bapi-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=accounts-bapi-srv"
+      Request-Id:
+      - req_rRR4Q9BatdJkOT
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "cus_R5jnAjmscnFPM2",
+          "object": "customer",
+          "address": null,
+          "balance": 0,
+          "created": 1729804293,
+          "currency": null,
+          "default_source": null,
+          "delinquent": false,
+          "description": null,
+          "discount": null,
+          "email": "morrison@gmail.com",
+          "invoice_prefix": "24436D2E",
+          "invoice_settings": {
+            "custom_fields": null,
+            "default_payment_method": null,
+            "footer": null,
+            "rendering_options": null
+          },
+          "livemode": false,
+          "metadata": {},
+          "name": "david morrison",
+          "phone": null,
+          "preferred_locales": [],
+          "shipping": null,
+          "tax_exempt": "none",
+          "test_clock": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:33 GMT
+recorded_with: VCR 6.2.0

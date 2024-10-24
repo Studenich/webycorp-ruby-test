@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'simplecov'
+require_relative 'support/vcr_setup'
 
 SimpleCov.start do
   enable_coverage :branch
