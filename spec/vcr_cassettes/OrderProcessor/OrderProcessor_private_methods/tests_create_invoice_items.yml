@@ -1,0 +1,2263 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://fakestoreapi.com/users/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:15 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"120-HNMhv14aQeBJetA9fBvavCZ+gdk"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=v%2Fs0uLZPFSVnVO2JvBdfPdmRN7Og1I363tqmhSH%2B5MAu21%2FjJuhpGw9A9kI2Zy1qk3zSOSdI7tVTRaQOAP%2B0iNeBvp6TcnP9mp%2FX3ZUxr9htvxouthoE5oRrTH%2FxqsFp9v7Q"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf54fee3e5b1b-VIE
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=79416&sent=7&recv=10&lost=0&retrans=2&sent_bytes=5495&recv_bytes=762&delivery_rate=31311&cwnd=251&unsent_bytes=0&cid=4899e201c7fbe12d&ts=356&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"address":{"geolocation":{"lat":"-37.3159","long":"81.1496"},"city":"kilcoole","street":"new
+        road","number":7682,"zipcode":"12926-3874"},"id":1,"email":"john@gmail.com","username":"johnd","password":"m38rmF$","name":{"firstname":"john","lastname":"doe"},"phone":"1-570-236-7033","__v":0}'
+  recorded_at: Thu, 24 Oct 2024 21:11:15 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/customers
+    body:
+      encoding: UTF-8
+      string: name=john+doe&email=john%40gmail.com
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_1GmCubQtpIjB91","request_duration_ms":0}}'
+      Idempotency-Key:
+      - e5a27e6b-e9cd-4713-984a-0bdd7cc7548a
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:16 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '602'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fcustomers; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - e5a27e6b-e9cd-4713-984a-0bdd7cc7548a
+      Original-Request:
+      - req_yhEkwc3k40ADss
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=accounts-bapi-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=accounts-bapi-srv"
+      Request-Id:
+      - req_yhEkwc3k40ADss
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "cus_R5jmrdbXioE6oh",
+          "object": "customer",
+          "address": null,
+          "balance": 0,
+          "created": 1729804276,
+          "currency": null,
+          "default_source": null,
+          "delinquent": false,
+          "description": null,
+          "discount": null,
+          "email": "john@gmail.com",
+          "invoice_prefix": "9C6346A6",
+          "invoice_settings": {
+            "custom_fields": null,
+            "default_payment_method": null,
+            "footer": null,
+            "rendering_options": null
+          },
+          "livemode": false,
+          "metadata": {},
+          "name": "john doe",
+          "phone": null,
+          "preferred_locales": [],
+          "shipping": null,
+          "tax_exempt": "none",
+          "test_clock": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:16 GMT
+- request:
+    method: get
+    uri: https://fakestoreapi.com/users/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:17 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"12d-rQ3vazNILlcEdp3VtaYW0Rr1+SY"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=NjB8oaiY7MWxYRWMGS5PCmtJ%2BeJYidPj55%2FhctfLWfTqWrLU06dMnzMxsWSRRzgK7vyUkvypdBk8ACfch1QFNA2P0dv6yivpZZRnaI8YICtPnayNcPfpfso2ZyQf4y48iIiU"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf55a5a46357b-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=124929&sent=7&recv=10&lost=0&retrans=2&sent_bytes=5494&recv_bytes=762&delivery_rate=45424&cwnd=251&unsent_bytes=0&cid=1d670dc678daacd2&ts=261&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"address":{"geolocation":{"lat":"-37.3159","long":"81.1496"},"city":"kilcoole","street":"Lovers
+        Ln","number":7267,"zipcode":"12926-3874"},"id":2,"email":"morrison@gmail.com","username":"mor_2314","password":"83r5^_","name":{"firstname":"david","lastname":"morrison"},"phone":"1-570-236-7033","__v":0}'
+  recorded_at: Thu, 24 Oct 2024 21:11:17 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/customers
+    body:
+      encoding: UTF-8
+      string: name=david+morrison&email=morrison%40gmail.com
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_yhEkwc3k40ADss","request_duration_ms":893}}'
+      Idempotency-Key:
+      - 91be183c-2050-4bd8-b8b2-ac27685b2319
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:17 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '612'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fcustomers; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 91be183c-2050-4bd8-b8b2-ac27685b2319
+      Original-Request:
+      - req_dkOpSdxnBkMGuE
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=accounts-bapi-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=accounts-bapi-srv"
+      Request-Id:
+      - req_dkOpSdxnBkMGuE
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "cus_R5jmcpneu7MVAo",
+          "object": "customer",
+          "address": null,
+          "balance": 0,
+          "created": 1729804277,
+          "currency": null,
+          "default_source": null,
+          "delinquent": false,
+          "description": null,
+          "discount": null,
+          "email": "morrison@gmail.com",
+          "invoice_prefix": "6086862C",
+          "invoice_settings": {
+            "custom_fields": null,
+            "default_payment_method": null,
+            "footer": null,
+            "rendering_options": null
+          },
+          "livemode": false,
+          "metadata": {},
+          "name": "david morrison",
+          "phone": null,
+          "preferred_locales": [],
+          "shipping": null,
+          "tax_exempt": "none",
+          "test_clock": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:17 GMT
+- request:
+    method: get
+    uri: https://fakestoreapi.com/products/1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:18 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"16c-MMdrqY6N0sTiefLdsgtBej9eunY"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=VUcJQ67NjkXbl%2FHtnZitk9cKCCHxyP9g6LZ9RjhrCFitYnuaJs4As9DaBx0G0VINve5rrKdsG5sYFVPZLHZUyNK4%2BXlk7G7JpYSnh22s9U%2BlH9bqpeeYzIty7cN9PCPCDjZh"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf5612b02c3b7-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=59160&sent=6&recv=9&lost=0&retrans=1&sent_bytes=4152&recv_bytes=765&delivery_rate=13689&cwnd=252&unsent_bytes=0&cid=97404d46d821098f&ts=247&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":1,"title":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops","price":109.95,"description":"Your
+        perfect pack for everyday use and walks in the forest. Stash your laptop (up
+        to 15 inches) in the padded sleeve, your everyday","category":"men''s clothing","image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg","rating":{"rate":3.9,"count":120}}'
+  recorded_at: Thu, 24 Oct 2024 21:11:18 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/products
+    body:
+      encoding: UTF-8
+      string: name=Fjallraven+-+Foldsack+No.+1+Backpack%2C+Fits+15+Laptops
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_dkOpSdxnBkMGuE","request_duration_ms":402}}'
+      Idempotency-Key:
+      - 8bff3e56-1d3f-4eaf-9e0a-88f41f1db974
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '503'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fproducts; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 8bff3e56-1d3f-4eaf-9e0a-88f41f1db974
+      Original-Request:
+      - req_Qs4wmLjDoBjCDe
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_Qs4wmLjDoBjCDe
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "prod_R5jmgDmOrcgWSh",
+          "object": "product",
+          "active": true,
+          "attributes": [],
+          "created": 1729804278,
+          "default_price": null,
+          "description": null,
+          "images": [],
+          "livemode": false,
+          "marketing_features": [],
+          "metadata": {},
+          "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "package_dimensions": null,
+          "shippable": null,
+          "statement_descriptor": null,
+          "tax_code": null,
+          "type": "service",
+          "unit_label": null,
+          "updated": 1729804278,
+          "url": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:18 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/prices
+    body:
+      encoding: UTF-8
+      string: currency=usd&unit_amount=10995&product=prod_R5jmgDmOrcgWSh
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_Qs4wmLjDoBjCDe","request_duration_ms":432}}'
+      Idempotency-Key:
+      - b4e3e075-7cec-4f77-8932-b7fb9b67517c
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:18 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '494'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fprices; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - b4e3e075-7cec-4f77-8932-b7fb9b67517c
+      Original-Request:
+      - req_TeyT5IJGSZZLnN
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_TeyT5IJGSZZLnN
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "price_1QDYJODwD6y7J6DjvwMlQ1qU",
+          "object": "price",
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1729804278,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "product": "prod_R5jmgDmOrcgWSh",
+          "recurring": null,
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "one_time",
+          "unit_amount": 10995,
+          "unit_amount_decimal": "10995"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:18 GMT
+- request:
+    method: get
+    uri: https://fakestoreapi.com/products/2
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:19 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"239-bLDSJo+O3FjSlzUr879oE3z3US8"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=E%2Fz45OfZnmCwC6HbysE00SD%2Fh1OxG1k4E5Hq28aAooK3ZBEL1s8QGNKHiWRqX1wGnjI5vNB5xHQEjDZ3oloZBmXhrfWWn8UWqIsZj14tQeZgce9yuobD2DzrOMCiEEiF%2Bri3"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf56a7ed33bb5-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=87844&sent=6&recv=9&lost=0&retrans=1&sent_bytes=4151&recv_bytes=765&delivery_rate=13312&cwnd=252&unsent_bytes=0&cid=3b90b9a22573e4d7&ts=252&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":2,"title":"Mens Casual Premium Slim Fit T-Shirts ","price":22.3,"description":"Slim-fitting
+        style, contrast raglan long sleeve, three-button henley placket, light weight
+        & soft fabric for breathable and comfortable wearing. And Solid stitched shirts
+        with round neck made for durability and a great fit for casual fashion wear
+        and diehard baseball fans. The Henley style round neckline includes a three-button
+        placket.","category":"men''s clothing","image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg","rating":{"rate":4.1,"count":259}}'
+  recorded_at: Thu, 24 Oct 2024 21:11:19 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/products
+    body:
+      encoding: UTF-8
+      string: name=Mens+Casual+Premium+Slim+Fit+T-Shirts+
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_TeyT5IJGSZZLnN","request_duration_ms":408}}'
+      Idempotency-Key:
+      - b4537a5d-8c51-4ce5-bd01-fd70d783b820
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:19 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '487'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fproducts; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - b4537a5d-8c51-4ce5-bd01-fd70d783b820
+      Original-Request:
+      - req_XPK6ELpw6fmIdA
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_XPK6ELpw6fmIdA
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "prod_R5jmx8mtIP1ove",
+          "object": "product",
+          "active": true,
+          "attributes": [],
+          "created": 1729804279,
+          "default_price": null,
+          "description": null,
+          "images": [],
+          "livemode": false,
+          "marketing_features": [],
+          "metadata": {},
+          "name": "Mens Casual Premium Slim Fit T-Shirts",
+          "package_dimensions": null,
+          "shippable": null,
+          "statement_descriptor": null,
+          "tax_code": null,
+          "type": "service",
+          "unit_label": null,
+          "updated": 1729804279,
+          "url": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:19 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/prices
+    body:
+      encoding: UTF-8
+      string: currency=usd&unit_amount=2230&product=prod_R5jmx8mtIP1ove
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_XPK6ELpw6fmIdA","request_duration_ms":384}}'
+      Idempotency-Key:
+      - 4870c81b-e62b-4b40-83ab-c88487f5cbc1
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '492'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fprices; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 4870c81b-e62b-4b40-83ab-c88487f5cbc1
+      Original-Request:
+      - req_FhcQrW71HbSS4t
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_FhcQrW71HbSS4t
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "price_1QDYJQDwD6y7J6Dj6TdDBPfN",
+          "object": "price",
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1729804280,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "product": "prod_R5jmx8mtIP1ove",
+          "recurring": null,
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "one_time",
+          "unit_amount": 2230,
+          "unit_amount_decimal": "2230"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:20 GMT
+- request:
+    method: get
+    uri: https://fakestoreapi.com/products/3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:20 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"1f7-sp1VJ3nFjCQkeyuDKaa7fYzPNXg"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=ZH0HGNUxLwAwIA0GwuPohi4Db%2F95J%2B9PW6baF3ph1c4dfHRRSl3pSh962PXHe%2B%2FSxqVzZmxt3tcvqmBy3jxl8GLYziHXg%2BGsRXurHntZ4qJ5xfDZOG1UL7iyWp9eflR1GoIF"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf5737b1c34d0-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=56154&sent=7&recv=10&lost=0&retrans=2&sent_bytes=5495&recv_bytes=765&delivery_rate=44725&cwnd=251&unsent_bytes=0&cid=e2f977295adcb9ea&ts=239&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":3,"title":"Mens Cotton Jacket","price":55.99,"description":"great
+        outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such
+        as working, hiking, camping, mountain/rock climbing, cycling, traveling or
+        other outdoors. Good gift choice for you or your family member. A warm hearted
+        love to Father, husband or son in this thanksgiving or Christmas Day.","category":"men''s
+        clothing","image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg","rating":{"rate":4.7,"count":500}}'
+  recorded_at: Thu, 24 Oct 2024 21:11:21 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/products
+    body:
+      encoding: UTF-8
+      string: name=Mens+Cotton+Jacket
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_FhcQrW71HbSS4t","request_duration_ms":411}}'
+      Idempotency-Key:
+      - 2f6c6b41-068a-4350-906d-8f2c1c7a497a
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:21 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '468'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fproducts; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 2f6c6b41-068a-4350-906d-8f2c1c7a497a
+      Original-Request:
+      - req_UmpCjkZ85fU2VI
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_UmpCjkZ85fU2VI
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "prod_R5jnQTAehUMFEy",
+          "object": "product",
+          "active": true,
+          "attributes": [],
+          "created": 1729804281,
+          "default_price": null,
+          "description": null,
+          "images": [],
+          "livemode": false,
+          "marketing_features": [],
+          "metadata": {},
+          "name": "Mens Cotton Jacket",
+          "package_dimensions": null,
+          "shippable": null,
+          "statement_descriptor": null,
+          "tax_code": null,
+          "type": "service",
+          "unit_label": null,
+          "updated": 1729804281,
+          "url": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:21 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/prices
+    body:
+      encoding: UTF-8
+      string: currency=usd&unit_amount=5599&product=prod_R5jnQTAehUMFEy
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_UmpCjkZ85fU2VI","request_duration_ms":407}}'
+      Idempotency-Key:
+      - 13c93dd9-f5d6-485f-9dc1-697d18b40c12
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:21 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '492'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fprices; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 13c93dd9-f5d6-485f-9dc1-697d18b40c12
+      Original-Request:
+      - req_ZJuRkBwIWNiOkx
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_ZJuRkBwIWNiOkx
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "price_1QDYJRDwD6y7J6Djju7woh9e",
+          "object": "price",
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1729804281,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "product": "prod_R5jnQTAehUMFEy",
+          "recurring": null,
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "one_time",
+          "unit_amount": 5599,
+          "unit_amount_decimal": "5599"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:21 GMT
+- request:
+    method: get
+    uri: https://fakestoreapi.com/products/5
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.10.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Thu, 24 Oct 2024 21:11:22 GMT
+      content-type:
+      - application/json; charset=utf-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      access-control-allow-origin:
+      - "*"
+      etag:
+      - W/"1c4-yV39eLSyZctGOOmgynRocvEzFjQ"
+      x-powered-by:
+      - Express
+      cf-cache-status:
+      - DYNAMIC
+      report-to:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v4?s=Jt8QPFHgxmS1zw%2FvatP%2BrsV%2FfVmB4uuh32vwN8wNMvoWBkbFXrHQoMHMo3KsV9cEDeHlb8cr03YwiJCELiZ3hboM%2F14JkHCA%2FvtycpPS1sUqO%2BO4GM5osjvLyGCjybIpdYRU"}],"group":"cf-nel","max_age":604800}'
+      nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      server:
+      - cloudflare
+      cf-ray:
+      - 8d7cf57c6cbdbbb1-WAW
+      alt-svc:
+      - h3=":443"; ma=86400
+      server-timing:
+      - cfL4;desc="?proto=TCP&rtt=122544&sent=6&recv=7&lost=0&retrans=1&sent_bytes=4153&recv_bytes=765&delivery_rate=12862&cwnd=252&unsent_bytes=0&cid=8854e2c405198a31&ts=169&x=0"
+    body:
+      encoding: ASCII-8BIT
+      string: '{"id":5,"title":"John Hardy Women''s Legends Naga Gold & Silver Dragon
+        Station Chain Bracelet","price":695,"description":"From our Legends Collection,
+        the Naga was inspired by the mythical water dragon that protects the ocean''s
+        pearl. Wear facing inward to be bestowed with love and abundance, or outward
+        for protection.","category":"jewelery","image":"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg","rating":{"rate":4.6,"count":400}}'
+  recorded_at: Thu, 24 Oct 2024 21:11:22 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/products
+    body:
+      encoding: UTF-8
+      string: name=John+Hardy+Women%27s+Legends+Naga+Gold+%26+Silver+Dragon+Station+Chain+Bracelet
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_ZJuRkBwIWNiOkx","request_duration_ms":394}}'
+      Idempotency-Key:
+      - a6496865-0dc0-4863-a997-c5c718c165f2
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:22 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '525'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fproducts; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - a6496865-0dc0-4863-a997-c5c718c165f2
+      Original-Request:
+      - req_pT4XUhKvttxFFS
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_pT4XUhKvttxFFS
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "prod_R5jnqdKubY9p5B",
+          "object": "product",
+          "active": true,
+          "attributes": [],
+          "created": 1729804282,
+          "default_price": null,
+          "description": null,
+          "images": [],
+          "livemode": false,
+          "marketing_features": [],
+          "metadata": {},
+          "name": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+          "package_dimensions": null,
+          "shippable": null,
+          "statement_descriptor": null,
+          "tax_code": null,
+          "type": "service",
+          "unit_label": null,
+          "updated": 1729804282,
+          "url": null
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:22 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/prices
+    body:
+      encoding: UTF-8
+      string: currency=usd&unit_amount=69500&product=prod_R5jnqdKubY9p5B
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_pT4XUhKvttxFFS","request_duration_ms":416}}'
+      Idempotency-Key:
+      - 90df50b9-0033-4987-928f-d70d04e71057
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '494'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Fprices; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 90df50b9-0033-4987-928f-d70d04e71057
+      Original-Request:
+      - req_kQ4tCNPjbFTXL2
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_kQ4tCNPjbFTXL2
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "price_1QDYJSDwD6y7J6Dj60qXAhhC",
+          "object": "price",
+          "active": true,
+          "billing_scheme": "per_unit",
+          "created": 1729804282,
+          "currency": "usd",
+          "custom_unit_amount": null,
+          "livemode": false,
+          "lookup_key": null,
+          "metadata": {},
+          "nickname": null,
+          "product": "prod_R5jnqdKubY9p5B",
+          "recurring": null,
+          "tax_behavior": "unspecified",
+          "tiers_mode": null,
+          "transform_quantity": null,
+          "type": "one_time",
+          "unit_amount": 69500,
+          "unit_amount_decimal": "69500"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:23 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/invoiceitems
+    body:
+      encoding: UTF-8
+      string: customer=cus_R5jmrdbXioE6oh&price=price_1QDYJODwD6y7J6DjvwMlQ1qU&quantity=4
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_kQ4tCNPjbFTXL2","request_duration_ms":422}}'
+      Idempotency-Key:
+      - 4b1e195d-a6f3-4177-a4ef-d6fa3857fc01
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1132'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Finvoiceitems; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 4b1e195d-a6f3-4177-a4ef-d6fa3857fc01
+      Original-Request:
+      - req_SUuiM1x1U7y29z
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_SUuiM1x1U7y29z
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "ii_1QDYJTDwD6y7J6DjE0qsbtFR",
+          "object": "invoiceitem",
+          "amount": 43980,
+          "currency": "usd",
+          "customer": "cus_R5jmrdbXioE6oh",
+          "date": 1729804283,
+          "description": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "discountable": true,
+          "discounts": [],
+          "invoice": null,
+          "livemode": false,
+          "metadata": {},
+          "period": {
+            "end": 1729804283,
+            "start": 1729804283
+          },
+          "plan": null,
+          "price": {
+            "id": "price_1QDYJODwD6y7J6DjvwMlQ1qU",
+            "object": "price",
+            "active": true,
+            "billing_scheme": "per_unit",
+            "created": 1729804278,
+            "currency": "usd",
+            "custom_unit_amount": null,
+            "livemode": false,
+            "lookup_key": null,
+            "metadata": {},
+            "nickname": null,
+            "product": "prod_R5jmgDmOrcgWSh",
+            "recurring": null,
+            "tax_behavior": "unspecified",
+            "tiers_mode": null,
+            "transform_quantity": null,
+            "type": "one_time",
+            "unit_amount": 10995,
+            "unit_amount_decimal": "10995"
+          },
+          "proration": false,
+          "quantity": 4,
+          "subscription": null,
+          "tax_rates": [],
+          "test_clock": null,
+          "unit_amount": 10995,
+          "unit_amount_decimal": "10995"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:23 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/invoiceitems
+    body:
+      encoding: UTF-8
+      string: customer=cus_R5jmrdbXioE6oh&price=price_1QDYJQDwD6y7J6Dj6TdDBPfN&quantity=1
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_SUuiM1x1U7y29z","request_duration_ms":477}}'
+      Idempotency-Key:
+      - 14828a9a-688d-4680-ade5-cb0c8e3acd24
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1111'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Finvoiceitems; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 14828a9a-688d-4680-ade5-cb0c8e3acd24
+      Original-Request:
+      - req_Ud3tZUK46tMYxK
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_Ud3tZUK46tMYxK
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "ii_1QDYJTDwD6y7J6DjdeaM51Tr",
+          "object": "invoiceitem",
+          "amount": 2230,
+          "currency": "usd",
+          "customer": "cus_R5jmrdbXioE6oh",
+          "date": 1729804283,
+          "description": "Mens Casual Premium Slim Fit T-Shirts",
+          "discountable": true,
+          "discounts": [],
+          "invoice": null,
+          "livemode": false,
+          "metadata": {},
+          "period": {
+            "end": 1729804283,
+            "start": 1729804283
+          },
+          "plan": null,
+          "price": {
+            "id": "price_1QDYJQDwD6y7J6Dj6TdDBPfN",
+            "object": "price",
+            "active": true,
+            "billing_scheme": "per_unit",
+            "created": 1729804280,
+            "currency": "usd",
+            "custom_unit_amount": null,
+            "livemode": false,
+            "lookup_key": null,
+            "metadata": {},
+            "nickname": null,
+            "product": "prod_R5jmx8mtIP1ove",
+            "recurring": null,
+            "tax_behavior": "unspecified",
+            "tiers_mode": null,
+            "transform_quantity": null,
+            "type": "one_time",
+            "unit_amount": 2230,
+            "unit_amount_decimal": "2230"
+          },
+          "proration": false,
+          "quantity": 1,
+          "subscription": null,
+          "tax_rates": [],
+          "test_clock": null,
+          "unit_amount": 2230,
+          "unit_amount_decimal": "2230"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:24 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/invoiceitems
+    body:
+      encoding: UTF-8
+      string: customer=cus_R5jmrdbXioE6oh&price=price_1QDYJRDwD6y7J6Djju7woh9e&quantity=6
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_Ud3tZUK46tMYxK","request_duration_ms":411}}'
+      Idempotency-Key:
+      - b7a6670d-0e73-4d4a-91e1-88f65931d614
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1093'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Finvoiceitems; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - b7a6670d-0e73-4d4a-91e1-88f65931d614
+      Original-Request:
+      - req_zsVWAKsMYOZ1Kw
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_zsVWAKsMYOZ1Kw
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "ii_1QDYJUDwD6y7J6DjKSkiQBtJ",
+          "object": "invoiceitem",
+          "amount": 33594,
+          "currency": "usd",
+          "customer": "cus_R5jmrdbXioE6oh",
+          "date": 1729804284,
+          "description": "Mens Cotton Jacket",
+          "discountable": true,
+          "discounts": [],
+          "invoice": null,
+          "livemode": false,
+          "metadata": {},
+          "period": {
+            "end": 1729804284,
+            "start": 1729804284
+          },
+          "plan": null,
+          "price": {
+            "id": "price_1QDYJRDwD6y7J6Djju7woh9e",
+            "object": "price",
+            "active": true,
+            "billing_scheme": "per_unit",
+            "created": 1729804281,
+            "currency": "usd",
+            "custom_unit_amount": null,
+            "livemode": false,
+            "lookup_key": null,
+            "metadata": {},
+            "nickname": null,
+            "product": "prod_R5jnQTAehUMFEy",
+            "recurring": null,
+            "tax_behavior": "unspecified",
+            "tiers_mode": null,
+            "transform_quantity": null,
+            "type": "one_time",
+            "unit_amount": 5599,
+            "unit_amount_decimal": "5599"
+          },
+          "proration": false,
+          "quantity": 6,
+          "subscription": null,
+          "tax_rates": [],
+          "test_clock": null,
+          "unit_amount": 5599,
+          "unit_amount_decimal": "5599"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:24 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/invoiceitems
+    body:
+      encoding: UTF-8
+      string: customer=cus_R5jmcpneu7MVAo&price=price_1QDYJQDwD6y7J6Dj6TdDBPfN&quantity=4
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_zsVWAKsMYOZ1Kw","request_duration_ms":441}}'
+      Idempotency-Key:
+      - 864eee7a-09af-4b08-83e8-bf89d9245a94
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1111'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Finvoiceitems; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - 864eee7a-09af-4b08-83e8-bf89d9245a94
+      Original-Request:
+      - req_FaXtN0umrIsXDS
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_FaXtN0umrIsXDS
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "ii_1QDYJUDwD6y7J6DjbIXg5ukC",
+          "object": "invoiceitem",
+          "amount": 8920,
+          "currency": "usd",
+          "customer": "cus_R5jmcpneu7MVAo",
+          "date": 1729804284,
+          "description": "Mens Casual Premium Slim Fit T-Shirts",
+          "discountable": true,
+          "discounts": [],
+          "invoice": null,
+          "livemode": false,
+          "metadata": {},
+          "period": {
+            "end": 1729804284,
+            "start": 1729804284
+          },
+          "plan": null,
+          "price": {
+            "id": "price_1QDYJQDwD6y7J6Dj6TdDBPfN",
+            "object": "price",
+            "active": true,
+            "billing_scheme": "per_unit",
+            "created": 1729804280,
+            "currency": "usd",
+            "custom_unit_amount": null,
+            "livemode": false,
+            "lookup_key": null,
+            "metadata": {},
+            "nickname": null,
+            "product": "prod_R5jmx8mtIP1ove",
+            "recurring": null,
+            "tax_behavior": "unspecified",
+            "tiers_mode": null,
+            "transform_quantity": null,
+            "type": "one_time",
+            "unit_amount": 2230,
+            "unit_amount_decimal": "2230"
+          },
+          "proration": false,
+          "quantity": 4,
+          "subscription": null,
+          "tax_rates": [],
+          "test_clock": null,
+          "unit_amount": 2230,
+          "unit_amount_decimal": "2230"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:24 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/invoiceitems
+    body:
+      encoding: UTF-8
+      string: customer=cus_R5jmcpneu7MVAo&price=price_1QDYJODwD6y7J6DjvwMlQ1qU&quantity=10
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_FaXtN0umrIsXDS","request_duration_ms":434}}'
+      Idempotency-Key:
+      - d15344a5-6b3a-4bc9-92f9-5937140a7925
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1134'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Finvoiceitems; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - d15344a5-6b3a-4bc9-92f9-5937140a7925
+      Original-Request:
+      - req_VK1LV5mr9dPEOt
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_VK1LV5mr9dPEOt
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "ii_1QDYJVDwD6y7J6DjNC65CDJz",
+          "object": "invoiceitem",
+          "amount": 109950,
+          "currency": "usd",
+          "customer": "cus_R5jmcpneu7MVAo",
+          "date": 1729804285,
+          "description": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+          "discountable": true,
+          "discounts": [],
+          "invoice": null,
+          "livemode": false,
+          "metadata": {},
+          "period": {
+            "end": 1729804285,
+            "start": 1729804285
+          },
+          "plan": null,
+          "price": {
+            "id": "price_1QDYJODwD6y7J6DjvwMlQ1qU",
+            "object": "price",
+            "active": true,
+            "billing_scheme": "per_unit",
+            "created": 1729804278,
+            "currency": "usd",
+            "custom_unit_amount": null,
+            "livemode": false,
+            "lookup_key": null,
+            "metadata": {},
+            "nickname": null,
+            "product": "prod_R5jmgDmOrcgWSh",
+            "recurring": null,
+            "tax_behavior": "unspecified",
+            "tiers_mode": null,
+            "transform_quantity": null,
+            "type": "one_time",
+            "unit_amount": 10995,
+            "unit_amount_decimal": "10995"
+          },
+          "proration": false,
+          "quantity": 10,
+          "subscription": null,
+          "tax_rates": [],
+          "test_clock": null,
+          "unit_amount": 10995,
+          "unit_amount_decimal": "10995"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:25 GMT
+- request:
+    method: post
+    uri: https://api.stripe.com/v1/invoiceitems
+    body:
+      encoding: UTF-8
+      string: customer=cus_R5jmcpneu7MVAo&price=price_1QDYJSDwD6y7J6Dj60qXAhhC&quantity=2
+    headers:
+      User-Agent:
+      - Stripe/v1 RubyBindings/13.0.1
+      Authorization:
+      - Bearer <STRIPE_SECRET_KEY>
+      X-Stripe-Client-Telemetry:
+      - '{"last_request_metrics":{"request_id":"req_VK1LV5mr9dPEOt","request_duration_ms":407}}'
+      Idempotency-Key:
+      - efbd72bf-cfe0-4f54-ab04-6b2a3ee7361c
+      Stripe-Version:
+      - 2024-09-30.acacia
+      X-Stripe-Client-User-Agent:
+      - '{"bindings_version":"13.0.1","lang":"ruby","lang_version":"2.7.2 p137 (2020-10-01)","platform":"x86_64-linux","engine":"ruby","publisher":"stripe","uname":"Linux
+        version 5.15.153.1-microsoft-standard-WSL2 (root@941d701f84f1) (gcc (GCC)
+        11.2.0, GNU ld (GNU Binutils) 2.37) #1 SMP Fri Mar 29 23:14:13 UTC 2024","hostname":"VALIK-LENOVO"}'
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 24 Oct 2024 21:11:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1155'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, HEAD, PUT, PATCH, POST, DELETE
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Request-Id, Stripe-Manage-Version, Stripe-Should-Retry, X-Stripe-External-Auth-Required,
+        X-Stripe-Privileged-Session-Required
+      Access-Control-Max-Age:
+      - '300'
+      Cache-Control:
+      - no-cache, no-store
+      Content-Security-Policy:
+      - report-uri https://q.stripe.com/csp-report?p=v1%2Finvoiceitems; block-all-mixed-content;
+        default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none';
+        img-src 'self'; script-src 'self' 'report-sample'; style-src 'self'
+      Cross-Origin-Opener-Policy-Report-Only:
+      - same-origin; report-to="coop"
+      Idempotency-Key:
+      - efbd72bf-cfe0-4f54-ab04-6b2a3ee7361c
+      Original-Request:
+      - req_cKC1zsuS2MFaQB
+      Report-To:
+      - '{"group":"coop","max_age":8640,"endpoints":[{"url":"https://q.stripe.com/coop-report?s=billing-api-srv"}],"include_subdomains":true}'
+      Reporting-Endpoints:
+      - coop="https://q.stripe.com/coop-report?s=billing-api-srv"
+      Request-Id:
+      - req_cKC1zsuS2MFaQB
+      Stripe-Should-Retry:
+      - 'false'
+      Stripe-Version:
+      - 2024-09-30.acacia
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Stripe-Priority-Routing-Enabled:
+      - 'true'
+      X-Stripe-Routing-Context-Priority-Tier:
+      - api-testmode
+      X-Wc:
+      - A
+      Strict-Transport-Security:
+      - max-age=63072000; includeSubDomains; preload
+    body:
+      encoding: UTF-8
+      string: |-
+        {
+          "id": "ii_1QDYJVDwD6y7J6DjymRL6jKS",
+          "object": "invoiceitem",
+          "amount": 139000,
+          "currency": "usd",
+          "customer": "cus_R5jmcpneu7MVAo",
+          "date": 1729804285,
+          "description": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+          "discountable": true,
+          "discounts": [],
+          "invoice": null,
+          "livemode": false,
+          "metadata": {},
+          "period": {
+            "end": 1729804285,
+            "start": 1729804285
+          },
+          "plan": null,
+          "price": {
+            "id": "price_1QDYJSDwD6y7J6Dj60qXAhhC",
+            "object": "price",
+            "active": true,
+            "billing_scheme": "per_unit",
+            "created": 1729804282,
+            "currency": "usd",
+            "custom_unit_amount": null,
+            "livemode": false,
+            "lookup_key": null,
+            "metadata": {},
+            "nickname": null,
+            "product": "prod_R5jnqdKubY9p5B",
+            "recurring": null,
+            "tax_behavior": "unspecified",
+            "tiers_mode": null,
+            "transform_quantity": null,
+            "type": "one_time",
+            "unit_amount": 69500,
+            "unit_amount_decimal": "69500"
+          },
+          "proration": false,
+          "quantity": 2,
+          "subscription": null,
+          "tax_rates": [],
+          "test_clock": null,
+          "unit_amount": 69500,
+          "unit_amount_decimal": "69500"
+        }
+  recorded_at: Thu, 24 Oct 2024 21:11:25 GMT
+recorded_with: VCR 6.2.0

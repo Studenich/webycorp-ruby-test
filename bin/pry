@@ -27,3 +27,5 @@ require "rubygems"
 require "bundler/setup"
 
 load Gem.bin_path("pry", "pry")
+
+require_relative '../lib/fakestoreapi_service/fake_store'
