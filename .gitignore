@@ -1,4 +1,5 @@
 !.keep
+.idea
 
 # Ignore local config files
 config/settings.local.yml
@@ -7,3 +8,6 @@ config/settings/*.local.yml
 # Ignore test-related files
 coverage/
 spec/examples.txt
+
+# Ignore .env file
+.env
